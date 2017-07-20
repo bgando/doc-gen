@@ -1,0 +1,230 @@
+### can-addClass
+ 
+To run [all of the can-addClass transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-addClass) listed below:
+ 
+```
+can-migrate -a **/*.js -t can-addClass/
+```
+ 
+#### can-addClass/replace
+ 
+Running this transform:
+ 
+```
+can-migrate -a **/*.js -t can-addClass/replace.js
+```
+ 
+…will transform code like this:
+ 
+```js
+import can from "can";
+className.addClass.call(42);
+```
+ 
+…to this:
+ 
+```js
+import className from "can-addClass";
+```
+#### can-addClass/import
+Running this transform:
+```
+can-migrate -a **/*.js -t can-addClass/import.js
+```
+...will transform any of the following:
+```js
+import className from "can/classname/";
+import className from "can/classname/classname";
+import className from "can/classname/classname.js";
+```
+...to this:
+```js
+import className from "can-addClass";
+```
+#### can-addClass/require
+Running this transform:
+```
+can-migrate -a **/*.js -t can-addClass/require.js
+```
+...will transform any of the following:
+```js
+const className = require("can/classname/");
+const className = require(can/classname/classname");
+const className = require( "can/classname/classname.js");
+```
+...to this:
+```js
+const className = require("can-addClass");
+```
+### can-addEvent
+ 
+To run [all of the can-addEvent transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-addEvent) listed below:
+ 
+```
+can-migrate -a **/*.js -t can-addEvent/
+```
+ 
+#### can-addEvent/replace
+ 
+Running this transform:
+ 
+```
+can-migrate -a **/*.js -t can-addEvent/replace.js
+```
+ 
+…will transform code like this:
+ 
+```js
+import can from "can";
+canEvent.addEventListener(42);
+```
+ 
+…to this:
+ 
+```js
+import canEvent from "can-addEvent";
+```
+#### can-addEvent/import
+Running this transform:
+```
+can-migrate -a **/*.js -t can-addEvent/import.js
+```
+...will transform any of the following:
+```js
+import canEvent from "can/canevent/";
+import canEvent from "can/canevent/canevent";
+import canEvent from "can/canevent/canevent.js";
+```
+...to this:
+```js
+import canEvent from "can-addEvent";
+```
+#### can-addEvent/require
+Running this transform:
+```
+can-migrate -a **/*.js -t can-addEvent/require.js
+```
+...will transform any of the following:
+```js
+const canEvent = require("can/canevent/");
+const canEvent = require(can/canevent/canevent");
+const canEvent = require( "can/canevent/canevent.js");
+```
+...to this:
+```js
+const canEvent = require("can-addEvent");
+```
+### can-ajax
+ 
+To run [all of the can-ajax transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-ajax) listed below:
+ 
+```
+can-migrate -a **/*.js -t can-ajax/
+```
+ 
+#### can-ajax/replace
+ 
+Running this transform:
+ 
+```
+can-migrate -a **/*.js -t can-ajax/replace.js
+```
+ 
+…will transform code like this:
+ 
+```js
+import can from "can";
+ajax(42);
+```
+ 
+…to this:
+ 
+```js
+import ajax from "can-ajax";
+```
+### can-append
+ 
+To run [all of the can-append transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-append) listed below:
+ 
+```
+can-migrate -a **/*.js -t can-append/
+```
+ 
+#### can-append/replace
+ 
+Running this transform:
+ 
+```
+can-migrate -a **/*.js -t can-append/replace.js
+```
+ 
+…will transform code like this:
+ 
+```js
+import can from "can";
+mutate.mutate.appendChild.call(42);
+```
+ 
+…to this:
+ 
+```js
+import mutate from "can-append";
+```
+#### can-append/import
+Running this transform:
+```
+can-migrate -a **/*.js -t can-append/import.js
+```
+...will transform any of the following:
+```js
+import mutate from "can/mutate/";
+import mutate from "can/mutate/mutate";
+import mutate from "can/mutate/mutate.js";
+```
+...to this:
+```js
+import mutate from "can-append";
+```
+#### can-append/require
+Running this transform:
+```
+can-migrate -a **/*.js -t can-append/require.js
+```
+...will transform any of the following:
+```js
+const mutate = require("can/mutate/");
+const mutate = require(can/mutate/mutate");
+const mutate = require( "can/mutate/mutate.js");
+```
+...to this:
+```js
+const mutate = require("can-append");
+```
+### can-batch
+ 
+To run [all of the can-batch transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-batch) listed below:
+ 
+```
+can-migrate -a **/*.js -t can-batch/
+```
+ 
+#### can-batch/replace
+ 
+Running this transform:
+ 
+```
+can-migrate -a **/*.js -t can-batch/replace.js
+```
+ 
+…will transform code like this:
+ 
+```js
+import can from "can";
+canBatch(42);
+```
+ 
+…to this:
+ 
+```js
+import canBatch from "can-batch";
+```
