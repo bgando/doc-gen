@@ -10,9 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "handlebars": "^4.0.10",
-    "helper-markdown": "^1.0.0",
     "node-xlsx": "^0.7.4",
-    "require-handlebars-plugin": "^1.0.0",
-    "xlsx": "^0.10.8"
   }
 }

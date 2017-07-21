@@ -2,17 +2,19 @@ const xlsx = require('node-xlsx');
 const fs = require('fs');
 const Handlebars = require('handlebars');
 
-const obj = xlsx.parse(__dirname + '/can-migrate-transforms-clean-v8.xlsx');
+const dataFile = '/can-migrate-transforms-clean-v9.xlsx';
+
+const obj = xlsx.parse(__dirname + dataFile);
 const rows = obj[0].data; //all rows
 rows.splice(0,1); //remove headings
 
-Handlebars.registerHelper('toLowerCase', function(str) {
+Handlebars.registerHelper('toLowerCase', str => {
   return str.toLowerCase();
 });
 
 
 const source =
-' \\\\THIS IS A GENERATED FILE. SEE ____\n' +
+' GENERATED FROM ' + dataFile +
 '{{#each rows as |component|}}\n'+
 '### {{{component.[0]}}}\n'+
 ' \n'+
@@ -105,7 +107,7 @@ const contents = template({rows: rows});
 
 fs.writeFile('contents.html', contents, err => {
     if (err) {
-        return console.error('Autsch! Failed to store template: ${err.message}.');
+        return console.error('Failed to store template: ${err.message}.');
     }
 
     console.log('Saved template!');
