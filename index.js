@@ -51,6 +51,7 @@ const source =
 '{{{component.[5]}}}\n'+
 '{{/if}}\n'+
 '```\n'+
+'@highlight 1,3,5\n'+
 '{{/if}}\n'+
 '{{#if component.[6]}}\n'+ //if there are import/require transforms
 '#### {{{component.[0]}}}/import\n' +
@@ -76,6 +77,7 @@ const source =
 '```js\n' +
 'import {{{component.[3]}}} from "{{{component.[2]}}}";\n' +
 '```\n' +
+'@highlight 1\n'+
 '#### {{{component.[0]}}}/require\n' +
 'Running this transform:\n' +
 '```\n' +
@@ -99,6 +101,7 @@ const source =
 '```js\n' +
 'const {{{component.[3]}}} = require("{{{component.[2]}}}");\n' +
 '```\n' +
+'@highlight 1\n'+
 '{{/if}}\n'+
 '{{/each}}';
 

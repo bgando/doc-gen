@@ -29,6 +29,7 @@ import className from "can-util/dom/class-name/class-name";
 import can from "can";
 className.addClass.call(el, 'myClass');
 ```
+@highlight 1,3,5
 
 ### can-addEvent
  
@@ -60,6 +61,7 @@ import canEvent from "can-event";
 import can from "can";
 canEvent.addEventListener.call(obj, "change", function() { alert("object change!"); });
 ```
+@highlight 1,3,5
 
 ### can-ajax
  
@@ -91,6 +93,7 @@ import ajax from "can-ajax";
 import can from "can";
 ajax();
 ```
+@highlight 1,3,5
 
 ### can-append
  
@@ -122,6 +125,7 @@ import mutate from "can-util/dom/mutate/mutate";
 import can from "can";
 mutate.mutate.appendChild.call(el, '<p></p>');
 ```
+@highlight 1,3,5
 
 ### can-batch
  
@@ -153,6 +157,7 @@ import canBatch from "can-batch";
 import can from "can";
 canBatch.method();
 ```
+@highlight 1,3,5
 
 ### can-buildFragment
  
@@ -184,6 +189,7 @@ import buildFragment from "can-buildFragment";
 import can from "can";
 buildFragment();
 ```
+@highlight 1,3,5
 
 ### can-camelize
  
@@ -215,6 +221,7 @@ import string from "can-util/js/string/string";
 import can from "can";
 string.camelize("str");
 ```
+@highlight 1,3,5
 
 ### can-capitilize
  
@@ -246,6 +253,7 @@ import string from "can-util/js/string/string";
 import can from "can";
 can.capitalize("str");
 ```
+@highlight 1,3,5
 
 ### can-component
  
@@ -277,6 +285,7 @@ import Component from "can-component";
 import can from "can";
 Component();
 ```
+@highlight 1,3,5
 #### can-component/import
 Running this transform:
 ```
@@ -292,6 +301,7 @@ import Component from "can/component/component.js";
 ```js
 import Component from "can-component";
 ```
+@highlight 1
 #### can-component/require
 Running this transform:
 ```
@@ -307,6 +317,7 @@ const Component = require("can/component/component.js");
 ```js
 const Component = require("can-component");
 ```
+@highlight 1
 
 ### can-compute
  
@@ -338,6 +349,7 @@ import compute from "can-compute";
 import can from "can";
 compute();
 ```
+@highlight 1,3,5
 #### can-compute/import
 Running this transform:
 ```
@@ -353,6 +365,7 @@ import compute from "can/compute/compute.js";
 ```js
 import compute from "can-compute";
 ```
+@highlight 1
 #### can-compute/require
 Running this transform:
 ```
@@ -368,6 +381,7 @@ const compute = require("can/compute/compute.js");
 ```js
 const compute = require("can-compute");
 ```
+@highlight 1
 
 ### can-construct-super
  
@@ -392,6 +406,7 @@ import constructSuper from "can/construct/super/super.js";
 ```js
 import constructSuper from "can-construct-super";
 ```
+@highlight 1
 #### can-construct-super/require
 Running this transform:
 ```
@@ -407,6 +422,7 @@ const constructSuper = require("can/construct/super/super.js");
 ```js
 const constructSuper = require("can-construct-super");
 ```
+@highlight 1
 
 ### can-construct
  
@@ -438,6 +454,7 @@ import Construct from "can-construct";
 import can from "can";
 Construct();
 ```
+@highlight 1,3,5
 #### can-construct/import
 Running this transform:
 ```
@@ -453,6 +470,7 @@ import construct from "can/construct/construct.js";
 ```js
 import Construct from "can-construct";
 ```
+@highlight 1
 #### can-construct/require
 Running this transform:
 ```
@@ -468,6 +486,7 @@ const construct = require("can/construct/construct.js");
 ```js
 const Construct = require("can-construct");
 ```
+@highlight 1
 
 ### can-control
  
@@ -499,6 +518,7 @@ import Control from "can-control";
 import can from "can";
 Control( staticProperties, instanceProperties );
 ```
+@highlight 1,3,5
 #### can-control/import
 Running this transform:
 ```
@@ -514,6 +534,7 @@ import Control from "can/control/control.js";
 ```js
 import Control from "can-control";
 ```
+@highlight 1
 #### can-control/require
 Running this transform:
 ```
@@ -529,6 +550,7 @@ const Control = require("can/control/control.js");
 ```js
 const Control = require("can-control");
 ```
+@highlight 1
 
 ### can-deparam
  
@@ -560,6 +582,7 @@ import deparam from "can-deparam";
 import can from "can";
 deparam("#foo[]=bar&foo[]=baz");
 ```
+@highlight 1,3,5
 
 ### can-dispatch
  
@@ -591,6 +614,7 @@ import canEvent from "can-event";
 import can from "can";
 canEvent( obj, event, args );
 ```
+@highlight 1,3,5
 
 ### can-each
  
@@ -622,6 +646,7 @@ import each from "can-each";
 import can from "can";
 each();
 ```
+@highlight 1,3,5
 
 ### can-esc
  
@@ -653,6 +678,7 @@ import string from "can-util/js/string/string";
 import can from "can";
 string.esc("<div>&nbsp</div>");
 ```
+@highlight 1,3,5
 
 ### can-event
  
@@ -684,6 +710,7 @@ import canEvent from "can-event";
 import can from "can";
 canEvent.dispatch.call(obj, "change");
 ```
+@highlight 1,3,5
 #### can-event/import
 Running this transform:
 ```
@@ -699,6 +726,7 @@ import event from "can/event/event.js";
 ```js
 import canEvent from "can-event";
 ```
+@highlight 1
 #### can-event/require
 Running this transform:
 ```
@@ -714,6 +742,7 @@ const event = require("can/event/event.js");
 ```js
 const canEvent = require("can-event");
 ```
+@highlight 1
 
 ### can-fixture
  
@@ -745,6 +774,7 @@ import fixture from "can-fixture";
 import can from "can";
 fixture( "/foobar.json", function(){});
 ```
+@highlight 1,3,5
 #### can-fixture/import
 Running this transform:
 ```
@@ -760,6 +790,7 @@ import fixture from "can/util/fixture/fixture.js";
 ```js
 import fixture from "can-fixture";
 ```
+@highlight 1
 #### can-fixture/require
 Running this transform:
 ```
@@ -775,6 +806,7 @@ const fixture = require("can/util/fixture/fixture.js");
 ```js
 const fixture = require("can-fixture");
 ```
+@highlight 1
 
 ### can-frag
  
@@ -806,6 +838,7 @@ import frag from "can-frag";
 import can from "can";
 frag();
 ```
+@highlight 1,3,5
 
 ### can-getObject
  
@@ -837,6 +870,7 @@ import string from "can-util/js/string/string";
 import can from "can";
 string.getObject(name, roots);
 ```
+@highlight 1,3,5
 
 ### can-hyphenate
  
@@ -868,6 +902,7 @@ import string from "can-util/js/string/string";
 import can from "can";
 string.hyphenate("str");
 ```
+@highlight 1,3,5
 
 ### can-isArray
  
@@ -899,6 +934,7 @@ import isArrayLike from "can-isArray";
 import can from "can";
 isArrayLike([1,2,3]);
 ```
+@highlight 1,3,5
 
 ### can-isDeferred
  
@@ -930,6 +966,7 @@ import isPromiseLike from "can-isDeferred";
 import can from "can";
 isPromiseLike(obj);
 ```
+@highlight 1,3,5
 
 ### can-isEmptyObject
  
@@ -961,6 +998,7 @@ import isEmptyObject from "can-isEmptyObject";
 import can from "can";
 isEmptyObject(obj);
 ```
+@highlight 1,3,5
 
 ### can-isFunction
  
@@ -992,6 +1030,7 @@ import isFunction from "can-isFunction";
 import can from "can";
 isFunction(func);
 ```
+@highlight 1,3,5
 
 ### can-list
  
@@ -1023,6 +1062,7 @@ import CanList from "can-list";
 import can from "can";
 var people = new CanList(['Alex', 'Bill']);
 ```
+@highlight 1,3,5
 #### can-list/import
 Running this transform:
 ```
@@ -1038,6 +1078,7 @@ import List from "can/list/list.js";
 ```js
 import CanList from "can-list";
 ```
+@highlight 1
 #### can-list/require
 Running this transform:
 ```
@@ -1053,6 +1094,7 @@ const List = require("can/list/list.js");
 ```js
 const CanList = require("can-list");
 ```
+@highlight 1
 
 ### can-listenTo
  
@@ -1084,6 +1126,7 @@ import canEvent from "can-event";
 import can from "can";
 canEvent.call(obj, other, event, handler);
 ```
+@highlight 1,3,5
 
 ### can-makeArray
  
@@ -1115,6 +1158,7 @@ import makeArray from "can-makeArray";
 import can from "can";
 makeArray({0: "a", length: 1});
 ```
+@highlight 1,3,5
 
 ### can-map-backup
  
@@ -1139,6 +1183,7 @@ import mapBackup from "can/map/backup/backup.js";
 ```js
 import mapBackup from "can-map-backup";
 ```
+@highlight 1
 #### can-map-backup/require
 Running this transform:
 ```
@@ -1154,6 +1199,7 @@ const mapBackup = require("can/map/backup/backup.js");
 ```js
 const mapBackup = require("can-map-backup");
 ```
+@highlight 1
 
 ### can-map-define
  
@@ -1178,6 +1224,7 @@ import mapDefine from "can/map/define/define.js";
 ```js
 import mapDefine from "can-map-define";
 ```
+@highlight 1
 #### can-map-define/require
 Running this transform:
 ```
@@ -1193,6 +1240,7 @@ const mapDefine = require("can/map/define/define.js");
 ```js
 const mapDefine = require("can-map-define");
 ```
+@highlight 1
 
 ### can-map
  
@@ -1224,6 +1272,7 @@ import CanMap from "can-map";
 import can from "can";
 const map = new CanMap(aName);
 ```
+@highlight 1,3,5
 #### can-map/import
 Running this transform:
 ```
@@ -1239,6 +1288,7 @@ import map from "can/map/map.js";
 ```js
 import CanMap from "can-map";
 ```
+@highlight 1
 #### can-map/require
 Running this transform:
 ```
@@ -1254,6 +1304,7 @@ const map = require("can/map/map.js");
 ```js
 const CanMap = require("can-map");
 ```
+@highlight 1
 
 ### can-model
  
@@ -1285,6 +1336,7 @@ import Model from "can-model";
 import can from "can";
 Model(name, staticProperties, instanceProperties);
 ```
+@highlight 1,3,5
 #### can-model/import
 Running this transform:
 ```
@@ -1300,6 +1352,7 @@ import model from "can/model/model.js";
 ```js
 import Model from "can-model";
 ```
+@highlight 1
 #### can-model/require
 Running this transform:
 ```
@@ -1315,6 +1368,7 @@ const model = require("can/model/model.js");
 ```js
 const Model = require("can-model");
 ```
+@highlight 1
 
 ### can-mustache
  
@@ -1346,6 +1400,7 @@ import mustache from "can-mustache";
 import can from "can";
 mustache( id, template );
 ```
+@highlight 1,3,5
 
 ### can-one
  
@@ -1377,6 +1432,7 @@ import canEvent from "can-event";
 import can from "can";
 canEvent.dispatch.call(obj, "change");
 ```
+@highlight 1,3,5
 
 ### can-param
  
@@ -1408,6 +1464,7 @@ import param from "can-param";
 import can from "can";
 param({foo: "bar"});
 ```
+@highlight 1,3,5
 
 ### can-remove
  
@@ -1439,6 +1496,7 @@ import mutate from "can-util/dom/mutate/mutate";
 import can from "can";
 mutate.mutate.removeChild.call.call(el, child);
 ```
+@highlight 1,3,5
 
 ### can-removeEvent
  
@@ -1470,6 +1528,7 @@ import canEvent from "can-event";
 import can from "can";
 canEvent.removeEvent.call(el, 'click', function() {});
 ```
+@highlight 1,3,5
 
 ### can-route-pushstate
  
@@ -1494,6 +1553,7 @@ import routePushState from "can/route/pushstate/pushstate.js";
 ```js
 import routePushState from "can-route-pushstate";
 ```
+@highlight 1
 #### can-route-pushstate/require
 Running this transform:
 ```
@@ -1509,6 +1569,7 @@ const routePushState = require("can/route/pushstate/pushstate.js");
 ```js
 const routePushState = require("can-route-pushstate");
 ```
+@highlight 1
 
 ### can-route
  
@@ -1540,6 +1601,7 @@ import route from "can-route";
 import can from "can";
 route("{page}", {page: 'homepage'});
 ```
+@highlight 1,3,5
 #### can-route/import
 Running this transform:
 ```
@@ -1555,6 +1617,7 @@ import route from "can/route/route.js";
 ```js
 import route from "can-route";
 ```
+@highlight 1
 #### can-route/require
 Running this transform:
 ```
@@ -1570,6 +1633,7 @@ const route = require("can/route/route.js");
 ```js
 const route = require("can-route");
 ```
+@highlight 1
 
 ### can-stache
  
@@ -1601,6 +1665,7 @@ import stache from "can-stache";
 import can from "can";
 stache(template);
 ```
+@highlight 1,3,5
 #### can-stache/import
 Running this transform:
 ```
@@ -1616,6 +1681,7 @@ import stache from "can/view/stache/stache.js";
 ```js
 import stache from "can-stache";
 ```
+@highlight 1
 #### can-stache/require
 Running this transform:
 ```
@@ -1631,6 +1697,7 @@ const stache = require("can/view/stache/stache.js");
 ```js
 const stache = require("can-stache");
 ```
+@highlight 1
 
 ### can-stopListening
  
@@ -1662,6 +1729,7 @@ import canEvent from "can-event";
 import can from "can";
 canEvent.stopListening.call(obj, other, event, handler);
 ```
+@highlight 1,3,5
 
 ### can-sub
  
@@ -1693,6 +1761,7 @@ import string from "can-util/js/string/string";
 import can from "can";
 string.sub(str, data, remove);
 ```
+@highlight 1,3,5
 
 ### can-underscore
  
@@ -1724,6 +1793,7 @@ import string from "can-util/js/string/string";
 import can from "can";
 string.underscore("str");
 ```
+@highlight 1,3,5
 
 ### can-view-attr
  
@@ -1755,6 +1825,7 @@ import canViewCallbacks from "can-view-callbacks";
 import can from "can";
 canViewCallbacks.attr(attributeName, attrHandler(el, attrData));
 ```
+@highlight 1,3,5
 
 ### can-view-autorender
  
@@ -1786,6 +1857,7 @@ import canAutorender from "can-view-autorender";
 import can from "can";
 canAutorender(succcess, error);
 ```
+@highlight 1,3,5
 #### can-view-autorender/import
 Running this transform:
 ```
@@ -1801,6 +1873,7 @@ import autorender from "can/view/autorender/autorender.js";
 ```js
 import canAutorender from "can-view-autorender";
 ```
+@highlight 1
 #### can-view-autorender/require
 Running this transform:
 ```
@@ -1816,6 +1889,7 @@ const autorender = require("can/view/autorender/autorender.js");
 ```js
 const canAutorender = require("can-view-autorender");
 ```
+@highlight 1
 
 ### can-view-callbacks
  
@@ -1847,6 +1921,7 @@ import canViewCallbacks from "can-view-callbacks";
 import can from "can";
 canViewCallbacks();
 ```
+@highlight 1,3,5
 #### can-view-callbacks/import
 Running this transform:
 ```
@@ -1862,6 +1937,7 @@ import viewCallbacks from "can/view/callbacks/callbacks.js";
 ```js
 import canViewCallbacks from "can-view-callbacks";
 ```
+@highlight 1
 #### can-view-callbacks/require
 Running this transform:
 ```
@@ -1877,6 +1953,7 @@ const viewCallbacks = require("can/view/callbacks/callbacks.js");
 ```js
 const canViewCallbacks = require("can-view-callbacks");
 ```
+@highlight 1
 
 ### can-view-href
  
@@ -1901,6 +1978,7 @@ import viewHref from "can/view/href/href.js";
 ```js
 import canViewHref from "can-view-href";
 ```
+@highlight 1
 #### can-view-href/require
 Running this transform:
 ```
@@ -1916,6 +1994,7 @@ const viewHref = require("can/view/href/href.js");
 ```js
 const canViewHref = require("can-view-href");
 ```
+@highlight 1
 
 ### can-view-import
  
@@ -1940,6 +2019,7 @@ import viewImport from "can/view/import/import.js";
 ```js
 import canViewImport from "can-view-import";
 ```
+@highlight 1
 #### can-view-import/require
 Running this transform:
 ```
@@ -1955,6 +2035,7 @@ const viewImport = require("can/view/import/import.js");
 ```js
 const canViewImport = require("can-view-import");
 ```
+@highlight 1
 
 ### can-view-live
  
@@ -1986,6 +2067,7 @@ import canViewLive from "can-view-live";
 import can from "can";
 canViewLive.text(textNode, text);
 ```
+@highlight 1,3,5
 #### can-view-live/import
 Running this transform:
 ```
@@ -2001,6 +2083,7 @@ import viewLive from "can/view/live/live.js";
 ```js
 import canViewLive from "can-view-live";
 ```
+@highlight 1
 #### can-view-live/require
 Running this transform:
 ```
@@ -2016,6 +2099,7 @@ const viewLive = require("can/view/live/live.js");
 ```js
 const canViewLive = require("can-view-live");
 ```
+@highlight 1
 
 ### can-view-parser
  
@@ -2040,6 +2124,7 @@ import viewParser from "can/view/parser/parser.js";
 ```js
 import canViewParser from "can-view-parser";
 ```
+@highlight 1
 #### can-view-parser/require
 Running this transform:
 ```
@@ -2055,6 +2140,7 @@ const viewParser = require("can/view/parser/parser.js");
 ```js
 const canViewParser = require("can-view-parser");
 ```
+@highlight 1
 
 ### can-view-scope
  
@@ -2086,6 +2172,7 @@ import canViewScope from "can-view-scope";
 import can from "can";
 const scope = new canViewScope(data);
 ```
+@highlight 1,3,5
 #### can-view-scope/import
 Running this transform:
 ```
@@ -2101,6 +2188,7 @@ import viewScope from "can/view/scope/scope.js";
 ```js
 import canViewScope from "can-view-scope";
 ```
+@highlight 1
 #### can-view-scope/require
 Running this transform:
 ```
@@ -2116,6 +2204,7 @@ const viewScope = require("can/view/scope/scope.js");
 ```js
 const canViewScope = require("can-view-scope");
 ```
+@highlight 1
 
 ### can-view-tag
  
@@ -2147,6 +2236,7 @@ import canViewCallbacks from "can-view-callbacks";
 import can from "can";
 canViewCallbacks.tag(tagName, tagHandler(el, tagData));
 ```
+@highlight 1,3,5
 
 ### can-view-target
  
@@ -2178,6 +2268,7 @@ import canViewTarget from "can-view-target";
 import can from "can";
 canViewTarget();
 ```
+@highlight 1,3,5
 #### can-view-target/import
 Running this transform:
 ```
@@ -2193,6 +2284,7 @@ import viewTarget from "can/view/target/target.js";
 ```js
 import canViewTarget from "can-view-target";
 ```
+@highlight 1
 #### can-view-target/require
 Running this transform:
 ```
@@ -2208,3 +2300,4 @@ const viewTarget = require("can/view/target/target.js");
 ```js
 const canViewTarget = require("can-view-target");
 ```
+@highlight 1
