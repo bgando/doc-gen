@@ -26,6 +26,7 @@ can.addClass(el, 'myClass');
  
 ```js
 import className from "can-util/dom/class-name/class-name";
+import can from "can";
 className.addClass.call(el, 'myClass');
 ```
 
@@ -56,6 +57,7 @@ can.addEvent.call(obj, "change", function() { alert("object change!"); });
  
 ```js
 import canEvent from "can-event";
+import can from "can";
 canEvent.addEventListener.call(obj, "change", function() { alert("object change!"); });
 ```
 
@@ -86,6 +88,7 @@ can.ajax();
  
 ```js
 import ajax from "can-ajax";
+import can from "can";
 ajax();
 ```
 
@@ -116,6 +119,7 @@ can.append(el, '<p></p>');
  
 ```js
 import mutate from "can-util/dom/mutate/mutate";
+import can from "can";
 mutate.mutate.appendChild.call(el, '<p></p>');
 ```
 
@@ -146,6 +150,7 @@ can.batch.method();
  
 ```js
 import canBatch from "can-batch";
+import can from "can";
 canBatch.method();
 ```
 
@@ -176,6 +181,7 @@ can.buildFragment();
  
 ```js
 import buildFragment from "can-buildFragment";
+import can from "can";
 buildFragment();
 ```
 
@@ -206,6 +212,7 @@ can.camelize("str");
  
 ```js
 import string from "can-util/js/string/string";
+import can from "can";
 string.camelize("str");
 ```
 
@@ -236,6 +243,7 @@ can.capitalize("str");
  
 ```js
 import string from "can-util/js/string/string";
+import can from "can";
 can.capitalize("str");
 ```
 
@@ -266,6 +274,7 @@ can.Component();
  
 ```js
 import Component from "can-component";
+import can from "can";
 Component();
 ```
 #### can-component/import
@@ -326,6 +335,7 @@ can.compute();
  
 ```js
 import compute from "can-compute";
+import can from "can";
 compute();
 ```
 #### can-compute/import
@@ -425,6 +435,7 @@ can.Construct();
  
 ```js
 import Construct from "can-construct";
+import can from "can";
 Construct();
 ```
 #### can-construct/import
@@ -485,6 +496,7 @@ can.Control( staticProperties, instanceProperties );
  
 ```js
 import Control from "can-control";
+import can from "can";
 Control( staticProperties, instanceProperties );
 ```
 #### can-control/import
@@ -545,6 +557,7 @@ can.deparam("#foo[]=bar&foo[]=baz");
  
 ```js
 import deparam from "can-deparam";
+import can from "can";
 deparam("#foo[]=bar&foo[]=baz");
 ```
 
@@ -575,6 +588,7 @@ can.dispatch( obj, event, args );
  
 ```js
 import canEvent from "can-event";
+import can from "can";
 canEvent( obj, event, args );
 ```
 
@@ -605,6 +619,7 @@ can.each();
  
 ```js
 import each from "can-each";
+import can from "can";
 each();
 ```
 
@@ -635,6 +650,7 @@ can.esc("<div>&nbsp</div>");
  
 ```js
 import string from "can-util/js/string/string";
+import can from "can";
 string.esc("<div>&nbsp</div>");
 ```
 
@@ -665,6 +681,7 @@ can.event.dispatch.call(obj, "change");
  
 ```js
 import canEvent from "can-event";
+import can from "can";
 canEvent.dispatch.call(obj, "change");
 ```
 #### can-event/import
@@ -725,6 +742,7 @@ can.fixture( "/foobar.json", function(){});
  
 ```js
 import fixture from "can-fixture";
+import can from "can";
 fixture( "/foobar.json", function(){});
 ```
 #### can-fixture/import
@@ -785,6 +803,7 @@ can.frag();
  
 ```js
 import frag from "can-frag";
+import can from "can";
 frag();
 ```
 
@@ -815,6 +834,7 @@ can.getObject(name, roots);
  
 ```js
 import string from "can-util/js/string/string";
+import can from "can";
 string.getObject(name, roots);
 ```
 
@@ -845,6 +865,7 @@ can.hyphenate("str");
  
 ```js
 import string from "can-util/js/string/string";
+import can from "can";
 string.hyphenate("str");
 ```
 
@@ -875,6 +896,7 @@ can.isArray([1,2,3]);
  
 ```js
 import isArrayLike from "can-isArray";
+import can from "can";
 isArrayLike([1,2,3]);
 ```
 
@@ -905,6 +927,7 @@ can.isDeferred(obj);
  
 ```js
 import isPromiseLike from "can-isDeferred";
+import can from "can";
 isPromiseLike(obj);
 ```
 
@@ -935,6 +958,7 @@ can.isEmptyObject(obj);
  
 ```js
 import isEmptyObject from "can-isEmptyObject";
+import can from "can";
 isEmptyObject(obj);
 ```
 
@@ -965,6 +989,7 @@ can.isFunction(func);
  
 ```js
 import isFunction from "can-isFunction";
+import can from "can";
 isFunction(func);
 ```
 
@@ -995,6 +1020,7 @@ var people = new can.List(['Alex', 'Bill']);
  
 ```js
 import CanList from "can-list";
+import can from "can";
 var people = new CanList(['Alex', 'Bill']);
 ```
 #### can-list/import
@@ -1055,6 +1081,7 @@ can.listenTo.call(obj, other, event, handler);
  
 ```js
 import canEvent from "can-event";
+import can from "can";
 canEvent.call(obj, other, event, handler);
 ```
 
@@ -1085,6 +1112,7 @@ can.makeArray({0: "a", length: 1});
  
 ```js
 import makeArray from "can-makeArray";
+import can from "can";
 makeArray({0: "a", length: 1});
 ```
 
@@ -1193,6 +1221,7 @@ const map = new can.Map(aName);
  
 ```js
 import CanMap from "can-map";
+import can from "can";
 const map = new CanMap(aName);
 ```
 #### can-map/import
@@ -1253,6 +1282,7 @@ can.Model(name, staticProperties, instanceProperties);
  
 ```js
 import Model from "can-model";
+import can from "can";
 Model(name, staticProperties, instanceProperties);
 ```
 #### can-model/import
@@ -1313,6 +1343,7 @@ can.mustache( id, template );
  
 ```js
 import mustache from "can-mustache";
+import can from "can";
 mustache( id, template );
 ```
 
@@ -1343,6 +1374,7 @@ can.event.dispatch.call(obj, "change");
  
 ```js
 import canEvent from "can-event";
+import can from "can";
 canEvent.dispatch.call(obj, "change");
 ```
 
@@ -1373,6 +1405,7 @@ can.param({foo: "bar"});
  
 ```js
 import param from "can-param";
+import can from "can";
 param({foo: "bar"});
 ```
 
@@ -1403,6 +1436,7 @@ can.remove.call(el, child);
  
 ```js
 import mutate from "can-util/dom/mutate/mutate";
+import can from "can";
 mutate.mutate.removeChild.call.call(el, child);
 ```
 
@@ -1433,6 +1467,7 @@ can.event.removeEvent.call(el, 'click', function() {});
  
 ```js
 import canEvent from "can-event";
+import can from "can";
 canEvent.removeEvent.call(el, 'click', function() {});
 ```
 
@@ -1502,6 +1537,7 @@ can.route("{page}", {page: 'homepage'});
  
 ```js
 import route from "can-route";
+import can from "can";
 route("{page}", {page: 'homepage'});
 ```
 #### can-route/import
@@ -1562,6 +1598,7 @@ can.stache(template);
  
 ```js
 import stache from "can-stache";
+import can from "can";
 stache(template);
 ```
 #### can-stache/import
@@ -1622,6 +1659,7 @@ can.event.stopListening.call(obj, other, event, handler);
  
 ```js
 import canEvent from "can-event";
+import can from "can";
 canEvent.stopListening.call(obj, other, event, handler);
 ```
 
@@ -1652,6 +1690,7 @@ can.sub(str, data, remove);
  
 ```js
 import string from "can-util/js/string/string";
+import can from "can";
 string.sub(str, data, remove);
 ```
 
@@ -1682,6 +1721,7 @@ can.underscore("str");
  
 ```js
 import string from "can-util/js/string/string";
+import can from "can";
 string.underscore("str");
 ```
 
@@ -1712,6 +1752,7 @@ can.view.attr(attributeName, attrHandler(el, attrData));
  
 ```js
 import canViewCallbacks from "can-view-callbacks";
+import can from "can";
 canViewCallbacks.attr(attributeName, attrHandler(el, attrData));
 ```
 
@@ -1742,6 +1783,7 @@ can.autorender(succcess, error);
  
 ```js
 import canAutorender from "can-view-autorender";
+import can from "can";
 canAutorender(succcess, error);
 ```
 #### can-view-autorender/import
@@ -1802,6 +1844,7 @@ can.view.callbacks();
  
 ```js
 import canViewCallbacks from "can-view-callbacks";
+import can from "can";
 canViewCallbacks();
 ```
 #### can-view-callbacks/import
@@ -1940,6 +1983,7 @@ can.view.live.text(textNode, text);
  
 ```js
 import canViewLive from "can-view-live";
+import can from "can";
 canViewLive.text(textNode, text);
 ```
 #### can-view-live/import
@@ -2039,6 +2083,7 @@ const scope = new can.view.scope(data);
  
 ```js
 import canViewScope from "can-view-scope";
+import can from "can";
 const scope = new canViewScope(data);
 ```
 #### can-view-scope/import
@@ -2099,6 +2144,7 @@ can.view.tag(tagName, tagHandler(el, tagData));
  
 ```js
 import canViewCallbacks from "can-view-callbacks";
+import can from "can";
 canViewCallbacks.tag(tagName, tagHandler(el, tagData));
 ```
 
@@ -2129,6 +2175,7 @@ can.view.target();
  
 ```js
 import canViewTarget from "can-view-target";
+import can from "can";
 canViewTarget();
 ```
 #### can-view-target/import

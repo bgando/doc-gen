@@ -46,6 +46,7 @@ const source =
 ' \n'+
 '```js\n'+
 'import {{{component.[3]}}} from "{{{component.[2]}}}";\n'+
+'import can from "can";\n'+
 '{{#if component.[5]}}\n'+ //if there is a code snippet, use it
 '{{{component.[5]}}}\n'+
 '{{/if}}\n'+
