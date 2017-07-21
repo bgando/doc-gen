@@ -31,6 +31,7 @@ className.addClass.call(el, 'myClass');
 ```
 @highlight 1,3,5
 
+
 ### can-addEvent
  
 To run [all of the can-addEvent transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-addEvent) listed below:
@@ -62,6 +63,7 @@ import can from "can";
 canEvent.addEventListener.call(obj, "change", function() { alert("object change!"); });
 ```
 @highlight 1,3,5
+
 
 ### can-ajax
  
@@ -95,6 +97,7 @@ ajax();
 ```
 @highlight 1,3,5
 
+
 ### can-append
  
 To run [all of the can-append transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-append) listed below:
@@ -126,6 +129,7 @@ import can from "can";
 mutate.mutate.appendChild.call(el, '<p></p>');
 ```
 @highlight 1,3,5
+
 
 ### can-batch
  
@@ -159,6 +163,7 @@ canBatch.method();
 ```
 @highlight 1,3,5
 
+
 ### can-buildFragment
  
 To run [all of the can-buildFragment transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-buildFragment) listed below:
@@ -190,6 +195,7 @@ import can from "can";
 buildFragment();
 ```
 @highlight 1,3,5
+
 
 ### can-camelize
  
@@ -223,6 +229,7 @@ string.camelize("str");
 ```
 @highlight 1,3,5
 
+
 ### can-capitilize
  
 To run [all of the can-capitilize transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-capitilize) listed below:
@@ -255,6 +262,7 @@ can.capitalize("str");
 ```
 @highlight 1,3,5
 
+
 ### can-component
  
 To run [all of the can-component transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-component) listed below:
@@ -286,7 +294,9 @@ import can from "can";
 Component();
 ```
 @highlight 1,3,5
+
 #### can-component/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-component/import.js
@@ -302,7 +312,9 @@ import Component from "can/component/component.js";
 import Component from "can-component";
 ```
 @highlight 1
+
 #### can-component/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-component/require.js
@@ -318,6 +330,7 @@ const Component = require("can/component/component.js");
 const Component = require("can-component");
 ```
 @highlight 1
+
 
 ### can-compute
  
@@ -350,7 +363,9 @@ import can from "can";
 compute();
 ```
 @highlight 1,3,5
+
 #### can-compute/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-compute/import.js
@@ -366,7 +381,9 @@ import compute from "can/compute/compute.js";
 import compute from "can-compute";
 ```
 @highlight 1
+
 #### can-compute/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-compute/require.js
@@ -383,6 +400,7 @@ const compute = require("can-compute");
 ```
 @highlight 1
 
+
 ### can-construct-super
  
 To run [all of the can-construct-super transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-construct-super) listed below:
@@ -392,6 +410,7 @@ can-migrate -a **/*.js -t can-construct-super/
 ```
  
 #### can-construct-super/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-construct-super/import.js
@@ -407,7 +426,9 @@ import constructSuper from "can/construct/super/super.js";
 import constructSuper from "can-construct-super";
 ```
 @highlight 1
+
 #### can-construct-super/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-construct-super/require.js
@@ -423,6 +444,7 @@ const constructSuper = require("can/construct/super/super.js");
 const constructSuper = require("can-construct-super");
 ```
 @highlight 1
+
 
 ### can-construct
  
@@ -455,7 +477,9 @@ import can from "can";
 Construct();
 ```
 @highlight 1,3,5
+
 #### can-construct/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-construct/import.js
@@ -471,7 +495,9 @@ import construct from "can/construct/construct.js";
 import Construct from "can-construct";
 ```
 @highlight 1
+
 #### can-construct/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-construct/require.js
@@ -487,6 +513,7 @@ const construct = require("can/construct/construct.js");
 const Construct = require("can-construct");
 ```
 @highlight 1
+
 
 ### can-control
  
@@ -519,7 +546,9 @@ import can from "can";
 Control( staticProperties, instanceProperties );
 ```
 @highlight 1,3,5
+
 #### can-control/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-control/import.js
@@ -535,7 +564,9 @@ import Control from "can/control/control.js";
 import Control from "can-control";
 ```
 @highlight 1
+
 #### can-control/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-control/require.js
@@ -551,6 +582,7 @@ const Control = require("can/control/control.js");
 const Control = require("can-control");
 ```
 @highlight 1
+
 
 ### can-deparam
  
@@ -584,6 +616,7 @@ deparam("#foo[]=bar&foo[]=baz");
 ```
 @highlight 1,3,5
 
+
 ### can-dispatch
  
 To run [all of the can-dispatch transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-dispatch) listed below:
@@ -615,6 +648,7 @@ import can from "can";
 canEvent( obj, event, args );
 ```
 @highlight 1,3,5
+
 
 ### can-each
  
@@ -648,6 +682,7 @@ each();
 ```
 @highlight 1,3,5
 
+
 ### can-esc
  
 To run [all of the can-esc transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-esc) listed below:
@@ -680,6 +715,7 @@ string.esc("<div>&nbsp</div>");
 ```
 @highlight 1,3,5
 
+
 ### can-event
  
 To run [all of the can-event transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-event) listed below:
@@ -711,7 +747,9 @@ import can from "can";
 canEvent.dispatch.call(obj, "change");
 ```
 @highlight 1,3,5
+
 #### can-event/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-event/import.js
@@ -727,7 +765,9 @@ import event from "can/event/event.js";
 import canEvent from "can-event";
 ```
 @highlight 1
+
 #### can-event/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-event/require.js
@@ -743,6 +783,7 @@ const event = require("can/event/event.js");
 const canEvent = require("can-event");
 ```
 @highlight 1
+
 
 ### can-fixture
  
@@ -775,7 +816,9 @@ import can from "can";
 fixture( "/foobar.json", function(){});
 ```
 @highlight 1,3,5
+
 #### can-fixture/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-fixture/import.js
@@ -791,7 +834,9 @@ import fixture from "can/util/fixture/fixture.js";
 import fixture from "can-fixture";
 ```
 @highlight 1
+
 #### can-fixture/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-fixture/require.js
@@ -807,6 +852,7 @@ const fixture = require("can/util/fixture/fixture.js");
 const fixture = require("can-fixture");
 ```
 @highlight 1
+
 
 ### can-frag
  
@@ -840,6 +886,7 @@ frag();
 ```
 @highlight 1,3,5
 
+
 ### can-getObject
  
 To run [all of the can-getObject transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-getObject) listed below:
@@ -871,6 +918,7 @@ import can from "can";
 string.getObject(name, roots);
 ```
 @highlight 1,3,5
+
 
 ### can-hyphenate
  
@@ -904,6 +952,7 @@ string.hyphenate("str");
 ```
 @highlight 1,3,5
 
+
 ### can-isArray
  
 To run [all of the can-isArray transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-isArray) listed below:
@@ -935,6 +984,7 @@ import can from "can";
 isArrayLike([1,2,3]);
 ```
 @highlight 1,3,5
+
 
 ### can-isDeferred
  
@@ -968,6 +1018,7 @@ isPromiseLike(obj);
 ```
 @highlight 1,3,5
 
+
 ### can-isEmptyObject
  
 To run [all of the can-isEmptyObject transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-isEmptyObject) listed below:
@@ -999,6 +1050,7 @@ import can from "can";
 isEmptyObject(obj);
 ```
 @highlight 1,3,5
+
 
 ### can-isFunction
  
@@ -1032,6 +1084,7 @@ isFunction(func);
 ```
 @highlight 1,3,5
 
+
 ### can-list
  
 To run [all of the can-list transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-list) listed below:
@@ -1063,7 +1116,9 @@ import can from "can";
 var people = new CanList(['Alex', 'Bill']);
 ```
 @highlight 1,3,5
+
 #### can-list/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-list/import.js
@@ -1079,7 +1134,9 @@ import List from "can/list/list.js";
 import CanList from "can-list";
 ```
 @highlight 1
+
 #### can-list/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-list/require.js
@@ -1095,6 +1152,7 @@ const List = require("can/list/list.js");
 const CanList = require("can-list");
 ```
 @highlight 1
+
 
 ### can-listenTo
  
@@ -1128,6 +1186,7 @@ canEvent.call(obj, other, event, handler);
 ```
 @highlight 1,3,5
 
+
 ### can-makeArray
  
 To run [all of the can-makeArray transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-makeArray) listed below:
@@ -1160,6 +1219,7 @@ makeArray({0: "a", length: 1});
 ```
 @highlight 1,3,5
 
+
 ### can-map-backup
  
 To run [all of the can-map-backup transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-map-backup) listed below:
@@ -1169,6 +1229,7 @@ can-migrate -a **/*.js -t can-map-backup/
 ```
  
 #### can-map-backup/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-map-backup/import.js
@@ -1184,7 +1245,9 @@ import mapBackup from "can/map/backup/backup.js";
 import mapBackup from "can-map-backup";
 ```
 @highlight 1
+
 #### can-map-backup/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-map-backup/require.js
@@ -1201,6 +1264,7 @@ const mapBackup = require("can-map-backup");
 ```
 @highlight 1
 
+
 ### can-map-define
  
 To run [all of the can-map-define transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-map-define) listed below:
@@ -1210,6 +1274,7 @@ can-migrate -a **/*.js -t can-map-define/
 ```
  
 #### can-map-define/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-map-define/import.js
@@ -1225,7 +1290,9 @@ import mapDefine from "can/map/define/define.js";
 import mapDefine from "can-map-define";
 ```
 @highlight 1
+
 #### can-map-define/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-map-define/require.js
@@ -1241,6 +1308,7 @@ const mapDefine = require("can/map/define/define.js");
 const mapDefine = require("can-map-define");
 ```
 @highlight 1
+
 
 ### can-map
  
@@ -1273,7 +1341,9 @@ import can from "can";
 const map = new CanMap(aName);
 ```
 @highlight 1,3,5
+
 #### can-map/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-map/import.js
@@ -1289,7 +1359,9 @@ import map from "can/map/map.js";
 import CanMap from "can-map";
 ```
 @highlight 1
+
 #### can-map/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-map/require.js
@@ -1305,6 +1377,7 @@ const map = require("can/map/map.js");
 const CanMap = require("can-map");
 ```
 @highlight 1
+
 
 ### can-model
  
@@ -1337,7 +1410,9 @@ import can from "can";
 Model(name, staticProperties, instanceProperties);
 ```
 @highlight 1,3,5
+
 #### can-model/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-model/import.js
@@ -1353,7 +1428,9 @@ import model from "can/model/model.js";
 import Model from "can-model";
 ```
 @highlight 1
+
 #### can-model/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-model/require.js
@@ -1369,6 +1446,7 @@ const model = require("can/model/model.js");
 const Model = require("can-model");
 ```
 @highlight 1
+
 
 ### can-mustache
  
@@ -1402,6 +1480,7 @@ mustache( id, template );
 ```
 @highlight 1,3,5
 
+
 ### can-one
  
 To run [all of the can-one transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-one) listed below:
@@ -1433,6 +1512,7 @@ import can from "can";
 canEvent.dispatch.call(obj, "change");
 ```
 @highlight 1,3,5
+
 
 ### can-param
  
@@ -1466,6 +1546,7 @@ param({foo: "bar"});
 ```
 @highlight 1,3,5
 
+
 ### can-remove
  
 To run [all of the can-remove transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-remove) listed below:
@@ -1497,6 +1578,7 @@ import can from "can";
 mutate.mutate.removeChild.call.call(el, child);
 ```
 @highlight 1,3,5
+
 
 ### can-removeEvent
  
@@ -1530,6 +1612,7 @@ canEvent.removeEvent.call(el, 'click', function() {});
 ```
 @highlight 1,3,5
 
+
 ### can-route-pushstate
  
 To run [all of the can-route-pushstate transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-route-pushstate) listed below:
@@ -1539,6 +1622,7 @@ can-migrate -a **/*.js -t can-route-pushstate/
 ```
  
 #### can-route-pushstate/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-route-pushstate/import.js
@@ -1554,7 +1638,9 @@ import routePushState from "can/route/pushstate/pushstate.js";
 import routePushState from "can-route-pushstate";
 ```
 @highlight 1
+
 #### can-route-pushstate/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-route-pushstate/require.js
@@ -1570,6 +1656,7 @@ const routePushState = require("can/route/pushstate/pushstate.js");
 const routePushState = require("can-route-pushstate");
 ```
 @highlight 1
+
 
 ### can-route
  
@@ -1602,7 +1689,9 @@ import can from "can";
 route("{page}", {page: 'homepage'});
 ```
 @highlight 1,3,5
+
 #### can-route/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-route/import.js
@@ -1618,7 +1707,9 @@ import route from "can/route/route.js";
 import route from "can-route";
 ```
 @highlight 1
+
 #### can-route/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-route/require.js
@@ -1634,6 +1725,7 @@ const route = require("can/route/route.js");
 const route = require("can-route");
 ```
 @highlight 1
+
 
 ### can-stache
  
@@ -1666,7 +1758,9 @@ import can from "can";
 stache(template);
 ```
 @highlight 1,3,5
+
 #### can-stache/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-stache/import.js
@@ -1682,7 +1776,9 @@ import stache from "can/view/stache/stache.js";
 import stache from "can-stache";
 ```
 @highlight 1
+
 #### can-stache/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-stache/require.js
@@ -1698,6 +1794,7 @@ const stache = require("can/view/stache/stache.js");
 const stache = require("can-stache");
 ```
 @highlight 1
+
 
 ### can-stopListening
  
@@ -1731,6 +1828,7 @@ canEvent.stopListening.call(obj, other, event, handler);
 ```
 @highlight 1,3,5
 
+
 ### can-sub
  
 To run [all of the can-sub transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-sub) listed below:
@@ -1762,6 +1860,7 @@ import can from "can";
 string.sub(str, data, remove);
 ```
 @highlight 1,3,5
+
 
 ### can-underscore
  
@@ -1795,6 +1894,7 @@ string.underscore("str");
 ```
 @highlight 1,3,5
 
+
 ### can-view-attr
  
 To run [all of the can-view-attr transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-view-attr) listed below:
@@ -1827,6 +1927,7 @@ canViewCallbacks.attr(attributeName, attrHandler(el, attrData));
 ```
 @highlight 1,3,5
 
+
 ### can-view-autorender
  
 To run [all of the can-view-autorender transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-view-autorender) listed below:
@@ -1858,7 +1959,9 @@ import can from "can";
 canAutorender(succcess, error);
 ```
 @highlight 1,3,5
+
 #### can-view-autorender/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-view-autorender/import.js
@@ -1874,7 +1977,9 @@ import autorender from "can/view/autorender/autorender.js";
 import canAutorender from "can-view-autorender";
 ```
 @highlight 1
+
 #### can-view-autorender/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-view-autorender/require.js
@@ -1890,6 +1995,7 @@ const autorender = require("can/view/autorender/autorender.js");
 const canAutorender = require("can-view-autorender");
 ```
 @highlight 1
+
 
 ### can-view-callbacks
  
@@ -1922,7 +2028,9 @@ import can from "can";
 canViewCallbacks();
 ```
 @highlight 1,3,5
+
 #### can-view-callbacks/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-view-callbacks/import.js
@@ -1938,7 +2046,9 @@ import viewCallbacks from "can/view/callbacks/callbacks.js";
 import canViewCallbacks from "can-view-callbacks";
 ```
 @highlight 1
+
 #### can-view-callbacks/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-view-callbacks/require.js
@@ -1955,6 +2065,7 @@ const canViewCallbacks = require("can-view-callbacks");
 ```
 @highlight 1
 
+
 ### can-view-href
  
 To run [all of the can-view-href transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-view-href) listed below:
@@ -1964,6 +2075,7 @@ can-migrate -a **/*.js -t can-view-href/
 ```
  
 #### can-view-href/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-view-href/import.js
@@ -1979,7 +2091,9 @@ import viewHref from "can/view/href/href.js";
 import canViewHref from "can-view-href";
 ```
 @highlight 1
+
 #### can-view-href/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-view-href/require.js
@@ -1996,6 +2110,7 @@ const canViewHref = require("can-view-href");
 ```
 @highlight 1
 
+
 ### can-view-import
  
 To run [all of the can-view-import transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-view-import) listed below:
@@ -2005,6 +2120,7 @@ can-migrate -a **/*.js -t can-view-import/
 ```
  
 #### can-view-import/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-view-import/import.js
@@ -2020,7 +2136,9 @@ import viewImport from "can/view/import/import.js";
 import canViewImport from "can-view-import";
 ```
 @highlight 1
+
 #### can-view-import/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-view-import/require.js
@@ -2036,6 +2154,7 @@ const viewImport = require("can/view/import/import.js");
 const canViewImport = require("can-view-import");
 ```
 @highlight 1
+
 
 ### can-view-live
  
@@ -2068,7 +2187,9 @@ import can from "can";
 canViewLive.text(textNode, text);
 ```
 @highlight 1,3,5
+
 #### can-view-live/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-view-live/import.js
@@ -2084,7 +2205,9 @@ import viewLive from "can/view/live/live.js";
 import canViewLive from "can-view-live";
 ```
 @highlight 1
+
 #### can-view-live/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-view-live/require.js
@@ -2101,6 +2224,7 @@ const canViewLive = require("can-view-live");
 ```
 @highlight 1
 
+
 ### can-view-parser
  
 To run [all of the can-view-parser transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-view-parser) listed below:
@@ -2110,6 +2234,7 @@ can-migrate -a **/*.js -t can-view-parser/
 ```
  
 #### can-view-parser/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-view-parser/import.js
@@ -2125,7 +2250,9 @@ import viewParser from "can/view/parser/parser.js";
 import canViewParser from "can-view-parser";
 ```
 @highlight 1
+
 #### can-view-parser/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-view-parser/require.js
@@ -2141,6 +2268,7 @@ const viewParser = require("can/view/parser/parser.js");
 const canViewParser = require("can-view-parser");
 ```
 @highlight 1
+
 
 ### can-view-scope
  
@@ -2173,7 +2301,9 @@ import can from "can";
 const scope = new canViewScope(data);
 ```
 @highlight 1,3,5
+
 #### can-view-scope/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-view-scope/import.js
@@ -2189,7 +2319,9 @@ import viewScope from "can/view/scope/scope.js";
 import canViewScope from "can-view-scope";
 ```
 @highlight 1
+
 #### can-view-scope/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-view-scope/require.js
@@ -2205,6 +2337,7 @@ const viewScope = require("can/view/scope/scope.js");
 const canViewScope = require("can-view-scope");
 ```
 @highlight 1
+
 
 ### can-view-tag
  
@@ -2238,6 +2371,7 @@ canViewCallbacks.tag(tagName, tagHandler(el, tagData));
 ```
 @highlight 1,3,5
 
+
 ### can-view-target
  
 To run [all of the can-view-target transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-view-target) listed below:
@@ -2269,7 +2403,9 @@ import can from "can";
 canViewTarget();
 ```
 @highlight 1,3,5
+
 #### can-view-target/import
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-view-target/import.js
@@ -2285,7 +2421,9 @@ import viewTarget from "can/view/target/target.js";
 import canViewTarget from "can-view-target";
 ```
 @highlight 1
+
 #### can-view-target/require
+
 Running this transform:
 ```
 can-migrate -a **/*.js -t can-view-target/require.js
@@ -2301,3 +2439,4 @@ const viewTarget = require("can/view/target/target.js");
 const canViewTarget = require("can-view-target");
 ```
 @highlight 1
+

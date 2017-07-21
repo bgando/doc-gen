@@ -52,9 +52,11 @@ const source =
 '{{/if}}\n'+
 '```\n'+
 '@highlight 1,3,5\n'+
+'\n'+
 '{{/if}}\n'+
 '{{#if component.[6]}}\n'+ //if there are import/require transforms
 '#### {{{component.[0]}}}/import\n' +
+'\n'+
 'Running this transform:\n' +
 '```\n' +
 'can-migrate -a **/*.js -t {{{component.[0]}}}/import.js\n' +
@@ -78,7 +80,9 @@ const source =
 'import {{{component.[3]}}} from "{{{component.[2]}}}";\n' +
 '```\n' +
 '@highlight 1\n'+
+'\n'+
 '#### {{{component.[0]}}}/require\n' +
+'\n'+
 'Running this transform:\n' +
 '```\n' +
 'can-migrate -a **/*.js -t {{{component.[0]}}}/require.js\n' +
@@ -102,6 +106,7 @@ const source =
 'const {{{component.[3]}}} = require("{{{component.[2]}}}");\n' +
 '```\n' +
 '@highlight 1\n'+
+'\n'+
 '{{/if}}\n'+
 '{{/each}}';
 
