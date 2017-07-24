@@ -2,7 +2,7 @@ const xlsx = require('node-xlsx');
 const fs = require('fs');
 const Handlebars = require('handlebars');
 
-const dataFile = '/can-migrate-transforms-clean-v9.xlsx';
+const dataFile = '/can-migrate-transforms-clean-v10.xlsx';
 
 const obj = xlsx.parse(__dirname + dataFile);
 const rows = obj[0].data; //all rows

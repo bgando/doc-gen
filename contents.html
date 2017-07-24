@@ -1,4 +1,4 @@
- GENERATED FROM /can-migrate-transforms-clean-v9.xlsx
+ GENERATED FROM /can-migrate-transforms-clean-v10.xlsx
 ### can-addClass
  
 To run [all of the can-addClass transforms](https://github.com/canjs/can-migrate/tree/master/src/transforms/can-addClass) listed below:
@@ -126,7 +126,7 @@ can.append(el, '<p></p>');
 ```js
 import mutate from "can-util/dom/mutate/mutate";
 import can from "can";
-mutate.mutate.appendChild.call(el, '<p></p>');
+mutate.appendChild.call(el, '<p></p>');
 ```
 @highlight 1,3,5
 
@@ -151,7 +151,7 @@ can-migrate -a **/*.js -t can-batch/replace.js
  
 ```js
 import can from "can";
-can.batch.method();
+can.batch.start();
 ```
  
 …to this:
@@ -159,7 +159,7 @@ can.batch.method();
 ```js
 import canBatch from "can-batch";
 import can from "can";
-canBatch.method();
+canBatch.start();
 ```
 @highlight 1,3,5
 
@@ -184,7 +184,7 @@ can-migrate -a **/*.js -t can-buildFragment/replace.js
  
 ```js
 import can from "can";
-can.buildFragment();
+can.buildFragment('<div><input/></div>');
 ```
  
 …to this:
@@ -192,7 +192,7 @@ can.buildFragment();
 ```js
 import buildFragment from "can-buildFragment";
 import can from "can";
-buildFragment();
+buildFragment('<div><input/></div>');
 ```
 @highlight 1,3,5
 
@@ -283,7 +283,7 @@ can-migrate -a **/*.js -t can-component/replace.js
  
 ```js
 import can from "can";
-can.Component();
+can.Component.extend();
 ```
  
 …to this:
@@ -291,7 +291,7 @@ can.Component();
 ```js
 import Component from "can-component";
 import can from "can";
-Component();
+Component.extend();
 ```
 @highlight 1,3,5
 
@@ -466,7 +466,7 @@ can-migrate -a **/*.js -t can-construct/replace.js
  
 ```js
 import can from "can";
-can.Construct();
+can.Construct.extend();
 ```
  
 …to this:
@@ -474,7 +474,7 @@ can.Construct();
 ```js
 import Construct from "can-construct";
 import can from "can";
-Construct();
+Construct.extend();
 ```
 @highlight 1,3,5
 
@@ -1575,7 +1575,7 @@ can.remove.call(el, child);
 ```js
 import mutate from "can-util/dom/mutate/mutate";
 import can from "can";
-mutate.mutate.removeChild.call.call(el, child);
+mutate.removeChild.call.call(el, child);
 ```
 @highlight 1,3,5
 
@@ -1921,7 +1921,7 @@ can.view.attr(attributeName, attrHandler(el, attrData));
 …to this:
  
 ```js
-import canViewCallbacks from "can-view-callbacks";
+import viewCallbacks from "can-view-callbacks";
 import can from "can";
 canViewCallbacks.attr(attributeName, attrHandler(el, attrData));
 ```
@@ -2023,7 +2023,7 @@ can.view.callbacks();
 …to this:
  
 ```js
-import canViewCallbacks from "can-view-callbacks";
+import viewCallbacks from "can-view-callbacks";
 import can from "can";
 canViewCallbacks();
 ```
@@ -2043,7 +2043,7 @@ import viewCallbacks from "can/view/callbacks/callbacks.js";
 ```
 ...to this:
 ```js
-import canViewCallbacks from "can-view-callbacks";
+import viewCallbacks from "can-view-callbacks";
 ```
 @highlight 1
 
@@ -2061,7 +2061,7 @@ const viewCallbacks = require("can/view/callbacks/callbacks.js");
 ```
 ...to this:
 ```js
-const canViewCallbacks = require("can-view-callbacks");
+const viewCallbacks = require("can-view-callbacks");
 ```
 @highlight 1
 
@@ -2088,7 +2088,7 @@ import viewHref from "can/view/href/href.js";
 ```
 ...to this:
 ```js
-import canViewHref from "can-view-href";
+import viewHref from "can-view-href";
 ```
 @highlight 1
 
@@ -2106,7 +2106,7 @@ const viewHref = require("can/view/href/href.js");
 ```
 ...to this:
 ```js
-const canViewHref = require("can-view-href");
+const viewHref = require("can-view-href");
 ```
 @highlight 1
 
@@ -2133,7 +2133,7 @@ import viewImport from "can/view/import/import.js";
 ```
 ...to this:
 ```js
-import canViewImport from "can-view-import";
+import viewImport from "can-view-import";
 ```
 @highlight 1
 
@@ -2151,7 +2151,7 @@ const viewImport = require("can/view/import/import.js");
 ```
 ...to this:
 ```js
-const canViewImport = require("can-view-import");
+const viewImport = require("can-view-import");
 ```
 @highlight 1
 
@@ -2182,7 +2182,7 @@ can.view.live.text(textNode, text);
 …to this:
  
 ```js
-import canViewLive from "can-view-live";
+import viewLive from "can-view-live";
 import can from "can";
 canViewLive.text(textNode, text);
 ```
@@ -2202,7 +2202,7 @@ import viewLive from "can/view/live/live.js";
 ```
 ...to this:
 ```js
-import canViewLive from "can-view-live";
+import viewLive from "can-view-live";
 ```
 @highlight 1
 
@@ -2220,7 +2220,7 @@ const viewLive = require("can/view/live/live.js");
 ```
 ...to this:
 ```js
-const canViewLive = require("can-view-live");
+const viewLive = require("can-view-live");
 ```
 @highlight 1
 
@@ -2247,7 +2247,7 @@ import viewParser from "can/view/parser/parser.js";
 ```
 ...to this:
 ```js
-import canViewParser from "can-view-parser";
+import viewParser from "can-view-parser";
 ```
 @highlight 1
 
@@ -2265,7 +2265,7 @@ const viewParser = require("can/view/parser/parser.js");
 ```
 ...to this:
 ```js
-const canViewParser = require("can-view-parser");
+const viewParser = require("can-view-parser");
 ```
 @highlight 1
 
@@ -2290,13 +2290,13 @@ can-migrate -a **/*.js -t can-view-scope/replace.js
  
 ```js
 import can from "can";
-const scope = new can.view.scope(data);
+const scope = new can.view.Scope(data);
 ```
  
 …to this:
  
 ```js
-import canViewScope from "can-view-scope";
+import viewScope from "can-view-scope";
 import can from "can";
 const scope = new canViewScope(data);
 ```
@@ -2316,7 +2316,7 @@ import viewScope from "can/view/scope/scope.js";
 ```
 ...to this:
 ```js
-import canViewScope from "can-view-scope";
+import viewScope from "can-view-scope";
 ```
 @highlight 1
 
@@ -2334,7 +2334,7 @@ const viewScope = require("can/view/scope/scope.js");
 ```
 ...to this:
 ```js
-const canViewScope = require("can-view-scope");
+const viewScope = require("can-view-scope");
 ```
 @highlight 1
 
@@ -2365,7 +2365,7 @@ can.view.tag(tagName, tagHandler(el, tagData));
 …to this:
  
 ```js
-import canViewCallbacks from "can-view-callbacks";
+import viewTag from "can-view-callbacks";
 import can from "can";
 canViewCallbacks.tag(tagName, tagHandler(el, tagData));
 ```
@@ -2398,7 +2398,7 @@ can.view.target();
 …to this:
  
 ```js
-import canViewTarget from "can-view-target";
+import viewTarget from "can-view-target";
 import can from "can";
 canViewTarget();
 ```
@@ -2418,7 +2418,7 @@ import viewTarget from "can/view/target/target.js";
 ```
 ...to this:
 ```js
-import canViewTarget from "can-view-target";
+import viewTarget from "can-view-target";
 ```
 @highlight 1
 
@@ -2436,7 +2436,7 @@ const viewTarget = require("can/view/target/target.js");
 ```
 ...to this:
 ```js
-const canViewTarget = require("can-view-target");
+const viewTarget = require("can-view-target");
 ```
 @highlight 1
 

@@ -1,0 +1,746 @@
+[
+  {
+    "copy": [
+      {
+        "input": "can-component-rename/can-component-rename.js",
+        "outputPath": "can-component-rename/can-component-rename.js",
+        "type": "transform"
+      },
+      {
+        "input": "can-component-rename/input.js",
+        "outputPath": "can-component-rename/can-component-rename-input.js",
+        "type": "fixture"
+      },
+      {
+        "input": "can-component-rename/output.js",
+        "outputPath": "can-component-rename/can-component-rename-output.js",
+        "type": "fixture"
+      },
+      {
+        "input": "can-component-rename/input-no-component.js",
+        "outputPath": "can-component-rename/can-component-rename-input-no-component.js",
+        "type": "fixture"
+      },
+      {
+        "input": "can-component-rename/output-no-component.js",
+        "outputPath": "can-component-rename/can-component-rename-output-no-component.js",
+        "type": "fixture"
+      },
+      {
+        "input": "can-component-rename/can-component-rename-test.js",
+        "outputPath": "can-component-rename/can-component-rename-test.js",
+        "type": "test"
+      }
+    ]
+  },
+  {
+    "copy": [
+      {
+        "input": "can-extend/can-extend.js",
+        "outputPath": "can-extend/can-extend.js",
+        "type": "transform"
+      },
+      {
+        "input": "can-extend/import-input.js",
+        "outputPath": "can-extend/can-extend-import-input.js",
+        "type": "fixture"
+      },
+      {
+        "input": "can-extend/import-output.js",
+        "outputPath": "can-extend/can-extend-import-output.js",
+        "type": "fixture"
+      },
+      {
+        "input": "can-extend/require-input.js",
+        "outputPath": "can-extend/can-extend-require-input.js",
+        "type": "fixture"
+      },
+      {
+        "input": "can-extend/require-output.js",
+        "outputPath": "can-extend/can-extend-require-output.js",
+        "type": "fixture"
+      },
+      {
+        "input": "can-extend/can-extend-test.js",
+        "outputPath": "can-extend/can-extend-test.js",
+        "type": "test"
+      }
+    ]
+  },
+  {
+    "copy": [
+      {
+        "input": "can-data/can-data.js",
+        "outputPath": "can-data/can-data.js",
+        "type": "transform"
+      },
+      {
+        "input": "can-data/import-input.js",
+        "outputPath": "can-data/can-data-import-input.js",
+        "type": "fixture"
+      },
+      {
+        "input": "can-data/import-output.js",
+        "outputPath": "can-data/can-data-import-output.js",
+        "type": "fixture"
+      },
+      {
+        "input": "can-data/require-input.js",
+        "outputPath": "can-data/can-data-require-input.js",
+        "type": "fixture"
+      },
+      {
+        "input": "can-data/require-output.js",
+        "outputPath": "can-data/can-data-require-output.js",
+        "type": "fixture"
+      },
+      {
+        "input": "can-data/can-data-test.js",
+        "outputPath": "can-data/can-data-test.js",
+        "type": "test"
+      }
+    ]
+  },
+  {
+    "generate": [
+      {
+        "template": "import/import.ejs",
+        "outputPath": "can-{shortName}/import.js",
+        "type": "transform"
+      },
+      {
+        "template": "import/import-input.ejs",
+        "outputPath": "can-{shortName}/import-input.js",
+        "type": "fixture"
+      },
+      {
+        "template": "import/import-output.ejs",
+        "outputPath": "can-{shortName}/import-output.js",
+        "type": "fixture"
+      },
+      {
+        "template": "import/import-test.ejs",
+        "outputPath": "can-{shortName}/import-test.js",
+        "type": "test"
+      },
+      {
+        "template": "require/require.ejs",
+        "outputPath": "can-{shortName}/require.js",
+        "type": "transform"
+      },
+      {
+        "template": "require/require-input.ejs",
+        "outputPath": "can-{shortName}/require-input.js",
+        "type": "fixture"
+      },
+      {
+        "template": "require/require-output.ejs",
+        "outputPath": "can-{shortName}/require-output.js",
+        "type": "fixture"
+      },
+      {
+        "template": "require/require-test.ejs",
+        "outputPath": "can-{shortName}/require-test.js",
+        "type": "test"
+      }
+    ],
+    "transforms": [
+      {
+        "shortName": "component",
+        "oldSourceValues": [
+          "can/component/",
+          "can/component/component",
+          "can/component/component.js"
+        ],
+        "newSourceValue": "can-component",
+        "exampleLocalName": "MyComponent"
+      },
+      {
+        "shortName": "construct",
+        "oldSourceValues": [
+          "can/construct/",
+          "can/construct/construct",
+          "can/construct/construct.js"
+        ],
+        "newSourceValue": "can-construct",
+        "exampleLocalName": "MyConstruct"
+      },
+      {
+        "shortName": "construct-super",
+        "oldSourceValues": [
+          "can/construct/super/",
+          "can/construct/super/super",
+          "can/construct/super/super.js"
+        ],
+        "newSourceValue": "can-construct-super",
+        "exampleLocalName": false
+      },
+      {
+        "shortName": "control",
+        "oldSourceValues": [
+          "can/control/",
+          "can/control/control",
+          "can/control/control.js"
+        ],
+        "newSourceValue": "can-control",
+        "exampleLocalName": "MyControl"
+      },
+      {
+        "shortName": "list",
+        "oldSourceValues": [
+          "can/list/",
+          "can/list/list",
+          "can/list/list.js"
+        ],
+        "newSourceValue": "can-list",
+        "exampleLocalName": "MyList"
+      },
+      {
+        "shortName": "map",
+        "oldSourceValues": [
+          "can/map/",
+          "can/map/map",
+          "can/map/map.js"
+        ],
+        "newSourceValue": "can-map",
+        "exampleLocalName": "MyMap"
+      },
+      {
+        "shortName": "map-backup",
+        "oldSourceValues": [
+          "can/map/backup/",
+          "can/map/backup/backup",
+          "can/map/backup/backup.js"
+        ],
+        "newSourceValue": "can-map-backup",
+        "exampleLocalName": false
+      },
+      {
+        "shortName": "map-define",
+        "oldSourceValues": [
+          "can/map/define/",
+          "can/map/define/define",
+          "can/map/define/define.js"
+        ],
+        "newSourceValue": "can-map-define",
+        "exampleLocalName": false
+      },
+      {
+        "shortName": "model",
+        "oldSourceValues": [
+          "can/model/",
+          "can/model/model",
+          "can/model/model.js"
+        ],
+        "newSourceValue": "can-model",
+        "exampleLocalName": "MyModel"
+      },
+      {
+        "shortName": "compute",
+        "oldSourceValues": [
+          "can/compute/",
+          "can/compute/compute",
+          "can/compute/compute.js"
+        ],
+        "newSourceValue": "can-compute",
+        "exampleLocalName": "MyCompute"
+      },
+      {
+        "shortName": "event",
+        "oldSourceValues": [
+          "can/event/",
+          "can/event/event",
+          "can/event/event.js"
+        ],
+        "newSourceValue": "can-event",
+        "exampleLocalName": "MyEvent"
+      },
+      {
+        "shortName": "fixture",
+        "oldSourceValues": [
+          "can/util/fixture/",
+          "can/util/fixture/fixture",
+          "can/util/fixture/fixture.js"
+        ],
+        "newSourceValue": "can-fixture",
+        "exampleLocalName": "MyFixture"
+      },
+      {
+        "shortName": "route",
+        "oldSourceValues": [
+          "can/route/",
+          "can/route/route",
+          "can/route/route.js"
+        ],
+        "newSourceValue": "can-route",
+        "exampleLocalName": "MyRoute"
+      },
+      {
+        "shortName": "route-pushstate",
+        "oldSourceValues": [
+          "can/route/pushstate/",
+          "can/route/pushstate/pushstate",
+          "can/route/pushstate/pushstate.js"
+        ],
+        "newSourceValue": "can-route-pushstate",
+        "exampleLocalName": false
+      },
+      {
+        "shortName": "stache",
+        "oldSourceValues": [
+          "can/view/stache/",
+          "can/view/stache/stache",
+          "can/view/stache/stache.js"
+        ],
+        "newSourceValue": "can-stache",
+        "exampleLocalName": "MyStache"
+      },
+      {
+        "shortName": "view-autorender",
+        "oldSourceValues": [
+          "can/view/autorender/",
+          "can/view/autorender/autorender",
+          "can/view/autorender/autorender.js"
+        ],
+        "newSourceValue": "can-view-autorender",
+        "exampleLocalName": "MyAutorender"
+      },
+      {
+        "shortName": "view-scope",
+        "oldSourceValues": [
+          "can/view/scope/",
+          "can/view/scope/scope",
+          "can/view/scope/scope.js"
+        ],
+        "newSourceValue": "can-view-scope",
+        "exampleLocalName": "MyViewScope"
+      },
+      {
+        "shortName": "view-live",
+        "oldSourceValues": [
+          "can/view/live/",
+          "can/view/live/live",
+          "can/view/live/live.js"
+        ],
+        "newSourceValue": "can-view-live",
+        "exampleLocalName": "MyViewLive"
+      },
+      {
+        "shortName": "view-target",
+        "oldSourceValues": [
+          "can/view/target/",
+          "can/view/target/target",
+          "can/view/target/target.js"
+        ],
+        "newSourceValue": "can-view-target",
+        "exampleLocalName": "MyTarget"
+      },
+      {
+        "shortName": "view-parser",
+        "oldSourceValues": [
+          "can/view/parser/",
+          "can/view/parser/parser",
+          "can/view/parser/parser.js"
+        ],
+        "newSourceValue": "can-view-parser",
+        "exampleLocalName": "MyParser"
+      },
+      {
+        "shortName": "view-callbacks",
+        "oldSourceValues": [
+          "can/view/callbacks/",
+          "can/view/callbacks/callbacks",
+          "can/view/callbacks/callbacks.js"
+        ],
+        "newSourceValue": "can-view-callbacks",
+        "exampleLocalName": "MyViewCallbacks"
+      },
+      {
+        "shortName": "view-import",
+        "oldSourceValues": [
+          "can/view/import/",
+          "can/view/import/import",
+          "can/view/import/import.js"
+        ],
+        "newSourceValue": "can-view-import",
+        "exampleLocalName": false
+      },
+      {
+        "shortName": "view-href",
+        "oldSourceValues": [
+          "can/view/href/",
+          "can/view/href/href",
+          "can/view/href/href.js"
+        ],
+        "newSourceValue": "can-view-href",
+        "exampleLocalName": false
+      }
+    ]
+  },
+  {
+    "generate": [
+      {
+        "template": "replace/replace.ejs",
+        "outputPath": "can-{shortName}/replace.js",
+        "type": "transform"
+      },
+      {
+        "template": "replace/replace-require-input.ejs",
+        "outputPath": "can-{shortName}/replace-require-input.js",
+        "type": "fixture"
+      },
+      {
+        "template": "replace/replace-require-output.ejs",
+        "outputPath": "can-{shortName}/replace-require-output.js",
+        "type": "fixture"
+      },
+      {
+        "template": "replace/replace-import-input.ejs",
+        "outputPath": "can-{shortName}/replace-import-input.js",
+        "type": "fixture"
+      },
+      {
+        "template": "replace/replace-import-output.ejs",
+        "outputPath": "can-{shortName}/replace-import-output.js",
+        "type": "fixture"
+      },
+      {
+        "template": "replace/replace-test.ejs",
+        "outputPath": "can-{shortName}/replace-test.js",
+        "type": "test"
+      }
+    ],
+    "transforms": [
+      {
+        "shortName": "component",
+        "oldObjectName": "can",
+        "oldPropertyName": "Component",
+        "newPropertyName": false,
+        "sourceValue": "can-component"
+      },
+      {
+        "shortName": "construct",
+        "oldObjectName": "can",
+        "oldPropertyName": "Construct",
+        "newPropertyName": false,
+        "sourceValue": "can-construct"
+      },
+      {
+        "shortName": "control",
+        "oldObjectName": "can",
+        "oldPropertyName": "Control",
+        "newPropertyName": false,
+        "sourceValue": "can-control"
+      },
+      {
+        "shortName": "list",
+        "oldObjectName": "can",
+        "oldPropertyName": "List",
+        "newPropertyName": false,
+        "sourceValue": "can-list"
+      },
+      {
+        "shortName": "map",
+        "oldObjectName": "can",
+        "oldPropertyName": "Map",
+        "newPropertyName": false,
+        "sourceValue": "can-map"
+      },
+      {
+        "shortName": "model",
+        "oldObjectName": "can",
+        "oldPropertyName": "Model",
+        "newPropertyName": false,
+        "sourceValue": "can-model"
+      },
+      {
+        "shortName": "compute",
+        "oldObjectName": "can",
+        "oldPropertyName": "compute",
+        "newPropertyName": false,
+        "sourceValue": "can-compute"
+      },
+      {
+        "shortName": "event",
+        "oldObjectName": "can",
+        "oldPropertyName": "event",
+        "newPropertyName": false,
+        "sourceValue": "can-event"
+      },
+      {
+        "shortName": "addEvent",
+        "oldObjectName": "can",
+        "oldPropertyName": "addEvent",
+        "newPropertyName": "addEventListener",
+        "sourceValue": "can-event"
+      },
+      {
+        "shortName": "dispatch",
+        "oldObjectName": "can",
+        "oldPropertyName": "dispatch",
+        "newPropertyName": false,
+        "sourceValue": "can-event"
+      },
+      {
+        "shortName": "listenTo",
+        "oldObjectName": "can",
+        "oldPropertyName": "listenTo",
+        "newPropertyName": false,
+        "sourceValue": "can-event"
+      },
+      {
+        "shortName": "one",
+        "oldObjectName": "can",
+        "oldPropertyName": "one",
+        "newPropertyName": false,
+        "sourceValue": "can-event"
+      },
+      {
+        "shortName": "removeEvent",
+        "oldObjectName": "can",
+        "oldPropertyName": "removeEvent",
+        "newPropertyName": "removeEventListener",
+        "sourceValue": "can-event"
+      },
+      {
+        "shortName": "stopListening",
+        "oldObjectName": "can",
+        "oldPropertyName": "stopListening",
+        "newPropertyName": false,
+        "sourceValue": "can-event"
+      },
+      {
+        "shortName": "batch",
+        "oldObjectName": "can",
+        "oldPropertyName": "batch",
+        "newPropertyName": false,
+        "sourceValue": "can-event/batch/batch"
+      },
+      {
+        "shortName": "fixture",
+        "oldObjectName": "can",
+        "oldPropertyName": "fixture",
+        "newPropertyName": false,
+        "sourceValue": "can-fixture"
+      },
+      {
+        "shortName": "mustache",
+        "oldObjectName": "can",
+        "oldPropertyName": "mustache",
+        "newPropertyName": false,
+        "sourceValue": "can-mustache"
+      },
+      {
+        "shortName": "route",
+        "oldObjectName": "can",
+        "oldPropertyName": "route",
+        "newPropertyName": false,
+        "sourceValue": "can-route"
+      },
+      {
+        "shortName": "stache",
+        "oldObjectName": "can",
+        "oldPropertyName": "stache",
+        "newPropertyName": false,
+        "sourceValue": "can-stache"
+      },
+      {
+        "shortName": "addClass",
+        "oldObjectName": "can",
+        "oldPropertyName": "addClass",
+        "newPropertyName": "addClass.call",
+        "sourceValue": "can-util/dom/class-name/class-name"
+      },
+      {
+        "shortName": "ajax",
+        "oldObjectName": "can",
+        "oldPropertyName": "ajax",
+        "newPropertyName": false,
+        "sourceValue": "can-util/dom/ajax/ajax"
+      },
+      {
+        "shortName": "append",
+        "oldObjectName": "can",
+        "oldPropertyName": "append",
+        "newPropertyName": "mutate.appendChild.call",
+        "sourceValue": "can-util/dom/mutate/mutate"
+      },
+      {
+        "shortName": "buildFragment",
+        "oldObjectName": "can",
+        "oldPropertyName": "buildFragment",
+        "newPropertyName": false,
+        "sourceValue": "can-util/dom/fragment/fragment"
+      },
+      {
+        "shortName": "camelize",
+        "oldObjectName": "can",
+        "oldPropertyName": "camelize",
+        "newPropertyName": "camelize",
+        "sourceValue": "can-util/js/string/string"
+      },
+      {
+        "shortName": "capitilize",
+        "oldObjectName": "can",
+        "oldPropertyName": "capitilize",
+        "newPropertyName": "capitilize",
+        "sourceValue": "can-util/js/string/string"
+      },
+      {
+        "shortName": "deparam",
+        "oldObjectName": "can",
+        "oldPropertyName": "deparam",
+        "newPropertyName": false,
+        "sourceValue": "can-util/js/deparam/deparam"
+      },
+      {
+        "shortName": "each",
+        "oldObjectName": "can",
+        "oldPropertyName": "each",
+        "newPropertyName": false,
+        "sourceValue": "can-util/js/each/each"
+      },
+      {
+        "shortName": "esc",
+        "oldObjectName": "can",
+        "oldPropertyName": "esc",
+        "newPropertyName": "esc",
+        "sourceValue": "can-util/js/string/string"
+      },
+      {
+        "shortName": "frag",
+        "oldObjectName": "can",
+        "oldPropertyName": "frag",
+        "newPropertyName": false,
+        "sourceValue": "can-util/dom/frag/frag"
+      },
+      {
+        "shortName": "getObject",
+        "oldObjectName": "can",
+        "oldPropertyName": "getObject",
+        "newPropertyName": "getObject",
+        "sourceValue": "can-util/js/string/string"
+      },
+      {
+        "shortName": "hyphenate",
+        "oldObjectName": "can",
+        "oldPropertyName": "hyphenate",
+        "newPropertyName": "hyphenate",
+        "sourceValue": "can-util/js/string/string"
+      },
+      {
+        "shortName": "isArray",
+        "oldObjectName": "can",
+        "oldPropertyName": "isArray",
+        "newPropertyName": false,
+        "sourceValue": "can-util/js/is-array-like/is-array-like"
+      },
+      {
+        "shortName": "isDeferred",
+        "oldObjectName": "can",
+        "oldPropertyName": "isDeferred",
+        "newPropertyName": false,
+        "sourceValue": "can-util/js/is-promise-like/is-promise-like"
+      },
+      {
+        "shortName": "isEmptyObject",
+        "oldObjectName": "can",
+        "oldPropertyName": "isEmptyObject",
+        "newPropertyName": false,
+        "sourceValue": "can-util/js/is-empty-object/is-empty-object"
+      },
+      {
+        "shortName": "isFunction",
+        "oldObjectName": "can",
+        "oldPropertyName": "isFunction",
+        "newPropertyName": false,
+        "sourceValue": "can-util/js/is-function/is-function"
+      },
+      {
+        "shortName": "makeArray",
+        "oldObjectName": "can",
+        "oldPropertyName": "makeArray",
+        "newPropertyName": false,
+        "sourceValue": "can-util/js/make-array/make-array"
+      },
+      {
+        "shortName": "param",
+        "oldObjectName": "can",
+        "oldPropertyName": "param",
+        "newPropertyName": false,
+        "sourceValue": "can-util/js/param/param"
+      },
+      {
+        "shortName": "remove",
+        "oldObjectName": "can",
+        "oldPropertyName": "remove",
+        "newPropertyName": "mutate.removeChild.call",
+        "sourceValue": "can-util/dom/mutate/mutate"
+      },
+      {
+        "shortName": "sub",
+        "oldObjectName": "can",
+        "oldPropertyName": "sub",
+        "newPropertyName": "sub",
+        "sourceValue": "can-util/js/string/string"
+      },
+      {
+        "shortName": "underscore",
+        "oldObjectName": "can",
+        "oldPropertyName": "underscore",
+        "newPropertyName": "underscore",
+        "sourceValue": "can-util/js/string/string"
+      },
+      {
+        "shortName": "view-autorender",
+        "oldObjectName": "can",
+        "oldPropertyName": "autorender",
+        "newPropertyName": false,
+        "sourceValue": "can-view-autorender"
+      },
+      {
+        "shortName": "view-scope",
+        "oldObjectName": "can.view",
+        "oldPropertyName": "scope",
+        "newPropertyName": false,
+        "sourceValue": "can-view-scope"
+      },
+      {
+        "shortName": "view-live",
+        "oldObjectName": "can.view",
+        "oldPropertyName": "live",
+        "newPropertyName": false,
+        "sourceValue": "can-view-live"
+      },
+      {
+        "shortName": "view-target",
+        "oldObjectName": "can.view",
+        "oldPropertyName": "target",
+        "newPropertyName": false,
+        "sourceValue": "can-view-target"
+      },
+      {
+        "shortName": "view-callbacks",
+        "oldObjectName": "can.view",
+        "oldPropertyName": "callbacks",
+        "newPropertyName": false,
+        "sourceValue": "can-view-callbacks"
+      },
+      {
+        "shortName": "view-attr",
+        "oldObjectName": "can.view",
+        "oldPropertyName": "attr",
+        "newPropertyName": "attr",
+        "sourceValue": "can-view-callbacks"
+      },
+      {
+        "shortName": "view-tag",
+        "oldObjectName": "can.view",
+        "oldPropertyName": "tag",
+        "newPropertyName": "tag",
+        "sourceValue": "can-view-callbacks"
+      }
+    ]
+  }
+]
+
